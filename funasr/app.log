@@ -21,3 +21,19 @@
 2024-03-07 16:14:50,498 - __main__ - INFO - 识别结果: 测试号码18819261072 
 2024-03-07 16:14:51,293 - __main__ - INFO - 将字典对象序列化为 JSON 字符串: {"mode": "offline", "wav_name": "test-number-188.mp3", "wav_format": "wav", "is_speaking": false}
 2024-03-07 16:14:52,428 - __main__ - INFO - 识别结果: 测试号码18819261072 
+2024-03-07 16:32:14,721 - __main__ - INFO - 初始化 WSS 连接 JSON 字符串: {"mode": "offline", "wav_name": "wav_name", "wav_format": "wav", "is_speaking": true, "itn": true}
+2024-03-07 16:32:20,085 - __main__ - INFO - 将字典对象序列化为 JSON 字符串: {"mode": "offline", "wav_name": "test-number-188.mp3", "wav_format": "wav", "is_speaking": false}
+2024-03-07 16:32:22,788 - __main__ - INFO - 识别结果: 测试号码18819261072 
+2024-03-07 16:32:27,038 - __main__ - INFO - 将字典对象序列化为 JSON 字符串: {"mode": "offline", "wav_name": "test-number-188.mp3", "wav_format": "wav", "is_speaking": false}
+2024-03-07 16:32:28,094 - __main__ - INFO - 识别结果: 测试号码18819261072 
+2024-03-07 16:32:29,253 - __main__ - INFO - 将字典对象序列化为 JSON 字符串: {"mode": "offline", "wav_name": "test-number-188.mp3", "wav_format": "wav", "is_speaking": false}
+2024-03-07 16:32:30,497 - __main__ - INFO - 识别结果: 测试号码18819261072 
+2024-03-07 16:32:31,774 - __main__ - INFO - 将字典对象序列化为 JSON 字符串: {"mode": "offline", "wav_name": "test-number-188.mp3", "wav_format": "wav", "is_speaking": false}
+2024-03-07 16:32:32,968 - __main__ - INFO - 识别结果: 测试号码18819261072 
+2024-03-07 16:33:54,054 - __main__ - INFO - 初始化 WSS 连接 JSON 字符串: {"mode": "offline", "wav_name": "wav_name", "wav_format": "wav", "is_speaking": true, "itn": true}
+2024-03-07 16:33:57,256 - __main__ - INFO - 将字典对象序列化为 JSON 字符串: {"mode": "offline", "wav_name": "test-number-188.mp3", "wav_format": "wav", "is_speaking": false}
+2024-03-07 16:33:59,537 - __main__ - INFO - 识别结果: 测试号码18819261072 。
+2024-03-07 16:34:00,798 - __main__ - INFO - 将字典对象序列化为 JSON 字符串: {"mode": "offline", "wav_name": "test-number-188.mp3", "wav_format": "wav", "is_speaking": false}
+2024-03-07 16:34:01,757 - __main__ - INFO - 识别结果: 测试号码18819261072 。
+2024-03-07 16:34:02,601 - __main__ - INFO - 将字典对象序列化为 JSON 字符串: {"mode": "offline", "wav_name": "test-number-188.mp3", "wav_format": "wav", "is_speaking": false}
+2024-03-07 16:34:03,761 - __main__ - INFO - 识别结果: 测试号码18819261072 。
