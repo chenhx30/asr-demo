@@ -1,0 +1,24 @@
+{
+  "status_code": 200,
+  "request_id": "c9448a0a-1a2a-9bb2-a28c-007ab82d66d0",
+  "code": "",
+  "message": "",
+  "output": {
+    "text": null,
+    "finish_reason": null,
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "对不起，我无法获取实时天气信息，建议您查看可靠的天气预报网站或应用以获得准确的温度和天气情况。不过，通常38摄氏度在广州市属于较高温，注意防暑。如果您需要华氏度的转换，我可以帮您计算一下。\n\n38摄氏度转换为华氏度大约是100.4华氏度。"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 19,
+    "output_tokens": 80,
+    "total_tokens": 99
+  }
+}

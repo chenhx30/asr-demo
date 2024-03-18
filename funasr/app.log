@@ -37,3 +37,24 @@
 2024-03-07 16:34:01,757 - __main__ - INFO - 识别结果: 测试号码18819261072 。
 2024-03-07 16:34:02,601 - __main__ - INFO - 将字典对象序列化为 JSON 字符串: {"mode": "offline", "wav_name": "test-number-188.mp3", "wav_format": "wav", "is_speaking": false}
 2024-03-07 16:34:03,761 - __main__ - INFO - 识别结果: 测试号码18819261072 。
+2024-03-08 17:37:39,706 - __main__ - INFO - 识别结果: 测试号码18819261072
+2024-03-08 17:37:39,715 - __main__ - INFO - 耗时: 4.19 秒
+2024-03-11 16:32:38,252 - funasr.service.funasr_offline_global_wss_service - INFO - 重新连接到 WebSocket...
+2024-03-11 16:32:59,292 - funasr.service.funasr_offline_global_wss_service - ERROR - 初始化 WSS 连接失败: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+Traceback (most recent call last):
+  File "C:\chenhx\workspace\asr-demo\funasr\service\funasr_offline_global_wss_service.py", line 19, in initialize_wss_connection
+    wss_connection = websocket.create_connection("wss://192.168.102.32:10095/", sslopt={"cert_reqs": ssl.CERT_NONE})
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chx\miniconda3\Lib\site-packages\websocket\_core.py", line 646, in create_connection
+    websock.connect(url, **options)
+  File "C:\Users\chx\miniconda3\Lib\site-packages\websocket\_core.py", line 256, in connect
+    self.sock, addrs = connect(
+                       ^^^^^^^^
+  File "C:\Users\chx\miniconda3\Lib\site-packages\websocket\_http.py", line 141, in connect
+    sock = _open_socket(addrinfo_list, options.sockopt, options.timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chx\miniconda3\Lib\site-packages\websocket\_http.py", line 218, in _open_socket
+    raise error
+  File "C:\Users\chx\miniconda3\Lib\site-packages\websocket\_http.py", line 205, in _open_socket
+    sock.connect(address)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
