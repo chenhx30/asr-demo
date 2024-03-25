@@ -6,64 +6,6 @@ from dashscope import Generation
 API_KEY = 'sk-16aa6d09b6ba46699e842d5dbc89ba50'
 
 def multi_round_conversation():
-    # messages = [
-    #     {"role": "system", "content": "You are a helpful assistant."},
-    #
-    #     {"role": "user", "content": "明天是张三的生日，他打算去购物。"},
-    #     {"role": "assistant", "content": "{'input': '明天是张三的生日，他打算去购物。', 'tag': '[明天/noun 是/verb 张三/noun 的/particle 生日/noun ，/punctuation 他/pron 打算/verb 去/verb 购物/noun 。/punctuation]', 'output': '明天是张三的生日，张三打算去购物。'}"},
-    #
-    #     {"role": "user", "content": "这本书很有趣，我买给了李四。"},
-    #     {"role": "assistant", "content": "{'input': '这本书很有趣，我买给了李四。', 'tag': '[这/det 本/m classifier 书/noun 很/adv 有趣/adj ，/punctuation 我/pron 买给/verb 了/aux 李四/noun 。/punctuation]', 'output': '这本书很有趣，我买给了李四。'}"},
-    #
-    #     {"role": "user", "content": "我们计划在周末去野餐，你们想要带什么？"},
-    #     {"role": "assistant", "content": "{'input': '我们计划在周末去野餐，你们想要带什么？', 'tag': '[我们/pron 计划/verb 在/p rep 周末/noun 去/verb 野餐/noun ，/p 我们/pron 想要/verb 带/verb 什么/pron ？/p]', 'output': '我们计划在周末去野餐，我们想要带什么？'}"},
-    #
-    #     {"role": "user", "content": "这篇论文写得很好，我推荐给了王五。"},
-    #     {"role": "assistant", "content": "{'input': '这篇论文写得很好，我推荐给了王五。', 'tag': '[这/det 篇/m classifier 论文/noun 写/verb 得/aux 很/adv 好/adj ，/p 我/pron 推荐/verb 给/verb 了/aux 王五/noun 。/p]', 'output': '这篇论文写得很好，我推荐给了王五。'}"},
-    #
-    #     {"role": "user", "content": "这个项目需要张三和李四的协助，他们会提供帮助。"},
-    #     {"role": "assistant", "content": "{'input': '这个项目需要张三和李四的协助，他们会提供帮助。', 'tag': '[这/det 个/q classifier 项目/noun 需要/verb 张三/noun 和/c 李四/noun 的/particle 协助/noun ，/p 他们/pron 会/verb 提供/verb 帮助/noun 。/p]', 'output': '这个项目需要张三和李四的协助，张三和李四会提供帮助。'}"}
-    # ]
-
-    # messages = [
-    #     {"role": "system", "content": "You are a helpful assistant."},
-    #
-    #     {"role": "user", "content": "昨天我去了动物园，看到了一只可爱的大熊猫。"},
-    #     {"role": "assistant", "content": "{\"input\": \"昨天我去了动物园，看到了一只可爱的大熊猫。\", \"tag\": \"[昨天/time 我/pron 去/verb 了/aux 动物园/noun ，/punctuation 看到/verb 了/aux 一/m classifier 只/q classifier 可爱/adj 的/particle 大熊猫/noun 。/punctuation]\", \"output\": \"昨天我去了动物园，看到了一只可爱的大熊猫。\"}"},
-    #
-    #     {"role": "user", "content": "它在阳光下悠闲地吃着竹子，是一种非常温柔的动物。"},
-    #     {"role": "assistant", "content": "{\"input\": \"它在阳光下悠闲地吃着竹子，是一种非常温柔的动物。\", \"tag\": \"[它/pron 在/p 阳光/noun 下/f 悠闲/adj 地/p 吃/verb 着/aux 竹子/noun ，/punctuation 是/verb 一种/m classifier 非常/adv 温柔/adj 的/particle 动物/noun 。/punctuation]\", \"output\": \"大熊猫在阳光下悠闲地吃着竹子，是一种非常温柔的动物。\"}"},
-    #
-    #     {"role": "user", "content": "我听说它们非常擅长攀爬树木和游泳。"},
-    #     {"role": "assistant", "content": "{\"input\": \"我听说它们非常擅长攀爬树木和游泳。\", \"tag\": \"[我/pron 听说/verb 它们/pron 非常/adv 擅长/verb 攀爬/verb 树木/noun 和/c 游泳/verb 。/punctuation]\", \"output\": \"我听说大熊猫非常擅长攀爬树木和游泳。\"}"},
-    #
-    #     {"role": "user", "content": "它们是我最喜欢的动物之一，我希望有一天能够亲眼见到它们。"},
-    #     {"role": "assistant", "content": "{\"input\": \"它们是我最喜欢的动物之一，我希望有一天能够亲眼见到它们。\", \"tag\": \"[它们/pron 是/verb 我/pron 最/adv 喜欢/verb 的/particle 动物/noun 之一/measure ，/p 我/pron 希望/verb 有/verb 一天/m classifier 能够/aux 亲眼/adv 见到/verb 它们/pron 。/punctuation]\", \"output\": \"大熊猫是我最喜欢的动物之一，我希望有一天能够亲眼见到大熊猫。\"}"}
-    # ]
-
-    # messages = [
-    #     {
-    #         "role": "system",
-    #         "content": "You are a helpful assistant."
-    #     },
-    #
-    #     {
-    #         "role": "user",
-    #         "content": "张三去了哪里？他去买菜了。他要买什么？他要买西红柿、黄瓜和土豆。"
-    #     },
-    #     {
-    #         "role": "assistant",
-    #         "content": """
-    #         {
-    #             '输入': '张三去了哪里？他去买菜了。他要买什么？他要买西红柿、黄瓜和土豆。',
-    #             '分词和词性标注': '[张三] [去] [了] [哪里] ？[他] [去] [买菜] [了] 。[他] [要] [买] [什么] ？[他] [要] [买] [西红柿]、[黄瓜] [和] [土豆] 。',
-    #             '命名实体': '[张三]去了哪里？[他]去买菜了。[他]要买什么？[他]要买[西红柿]、[黄瓜]和[土豆]。',
-    #             '分析依存句法，找出代词与其先行词之间的关系': '代词[他]与先行词[张三]之间存在着动作关系',
-    #             '输出': '张三去了哪里？张三去买菜了。张三要买什么？张三要买西红柿、黄瓜和土豆。'
-    #         }
-    #         """
-    #     }
-    # ]
 
     messages = [
         {
@@ -140,12 +82,12 @@ def multi_round_conversation():
             "content": """
                 {
                     '输入': '我是陈总，他是张三，找找他的号码信息',
-                    '分词和词性标注': '......',
-                    '命名实体': '......',
-                    '依存句法分析': '......',
-                    '代词识别': '......',
-                    '先行词识别': '......',
-                    '指代消解': '......',
+                    '分词和词性标注': '[我/r] [是/v] [陈总/nr] [，/w] [他/r] [是/v] [张三/nr] [，/w] [找/v] [找/v] [他/r] [的/u] [号码/n] [信息/n]',
+                    '命名实体': '[我/O] [是/O] [陈总/person] [，/O] [他/O] [是/O] [张三/person] [，/O] [找/v] [找/v] [他/O] [的/O] [号码/n] [信息/n]',
+                    '依存句法分析': '代词[他]与先行词[张三]之间存在着指代关系',
+                    '代词识别': '人称代词[他]',
+                    '先行词识别': '先行词[张三]',
+                    '指代消解': '替换人称代词[他]为先行词[张三]',
                     '输出': '我是陈总，他是张三，找找张三的号码信息'
                 }
             """
