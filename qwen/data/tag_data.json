@@ -1,0 +1,18 @@
+[
+  {"role": "system", "content": "You are a helpful assistant."},
+
+  {"role": "user", "content": "明天是张三的生日，他打算去购物。"},
+  {"role": "assistant", "content": "{'input': '明天是张三的生日，他打算去购物。', 'tag': '[明天/noun 是/verb 张三/noun 的/particle 生日/noun ，/punctuation 他/pron 打算/verb 去/verb 购物/noun 。/punctuation]', 'output': ''}"},
+
+  {"role": "user", "content": ""},
+  {"role": "assistant", "content": "{'input': '', 'tag': '', 'output': ''}"},
+
+  {"role": "user", "content": ""},
+  {"role": "assistant", "content": "{'input': '', 'tag': '', 'output': ''}"},
+
+  {"role": "user", "content": ""},
+  {"role": "assistant", "content": "{'input': '', 'tag': '', 'output': ''}"},
+
+  {"role": "user", "content": ""},
+  {"role": "assistant", "content": "{'input': '', 'tag': '', 'output': ''}"},
+]

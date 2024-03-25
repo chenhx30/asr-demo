@@ -1,0 +1,15 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful assistant."
+  },
+
+  {
+    "role": "user",
+    "content": "张三去了哪里？他去买菜了。他要买什么？他要买西红柿、黄瓜和土豆。"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  }
+]
